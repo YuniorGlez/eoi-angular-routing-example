@@ -1,0 +1,14 @@
+<div>
+  <h2>Listado de todos, Vista maestro</h2>
+</div>
+<div *ngFor="let todo of todos" class="container-todos" [routerLink]="['/todos', todo.id]">
+  <div class="card mb-4" style="max-width: 100%;"  >
+    <div class="column no-gutters">
+      <div class="col-md-12">
+        <div class="card-body">
+          <h5 class="card-title">{{todo.title | titlecase}}</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

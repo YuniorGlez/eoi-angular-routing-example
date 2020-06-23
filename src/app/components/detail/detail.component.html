@@ -1,0 +1,7 @@
+<div class="container card" style="width: 28rem;">
+  <div class="card-body">
+    <h1>Título: {{todo.title | titlecase}}</h1>
+    <p *ngIf="todo.completed" class="card-text">Completado</p>
+    <p *ngIf="!todo.completed" class="card-text">Sin completar</p>
+  </div>
+</div>
